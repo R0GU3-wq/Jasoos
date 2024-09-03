@@ -6,7 +6,7 @@ import re
 def harvest_emails(url):
     options = Options()
     options.headless = True
-    service = Service('/usr/local/bin/geckodriver')
+    service = Service('geckodriver')
 
     try:
         driver = webdriver.Firefox(service=service, options=options)
